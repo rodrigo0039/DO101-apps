@@ -5,7 +5,17 @@ var response;
 
 app.get('/', function (req, res) {
 
-    response = 'This is version 3 of the app.' + '\n';
+    response = 'Essa é a versão 4 desta aplicaqção.' + '\n';
+
+    //send the response to the client
+    res.send(response);
+
+});
+
+
+app.get('/teste', function (req, res) {
+
+    response = 'Testando uma nova rota desta aplicação.' + '\n';
 
     //send the response to the client
     res.send(response);
