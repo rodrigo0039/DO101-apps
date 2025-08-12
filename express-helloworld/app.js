@@ -2,7 +2,10 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Computação em Nuvem - 2025.1!\n');
+
+  console.log("Processando requisição ...");
+  res.send('Computação em Nuvem - 2025.2!\n');
+  
 });
 
 app.get('/teste', function (req, res) {
